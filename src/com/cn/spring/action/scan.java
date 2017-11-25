@@ -21,6 +21,5 @@ public class scan {
 		mv.addObject("message", "注解的测试");
 		mv.setViewName("welcome");
 		return mv;
-		
 	}
 }

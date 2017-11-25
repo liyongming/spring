@@ -10,11 +10,9 @@
 		http://www.springframework.org/schema/context/spring-context-4.0.xsd
 		http://www.springframework.org/schema/mvc 
 		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
-	<!-- <bean name="/hello" class="com.cn.spring.action.hello"></bean> -->
 	<context:component-scan base-package="com.cn.spring.action"></context:component-scan>
-	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean> -->
-<!-- 	<mvc:annotation-driver/>
-	<mvc:default-servlet-handler /> -->
+	<mvc:default-servlet-handler/>
+	<mvc:annotation-driven/>
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/content/</value>
