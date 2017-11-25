@@ -24,7 +24,7 @@ public  class hello implements Controller{
 		logger.info("handlerRequest被调用");
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("message", "handler被调用了...");
-		modelAndView.setViewName("/WEB-INF/content/welcome.jsp");
+		modelAndView.setViewName("welcome");
 		return modelAndView;
 	}
 

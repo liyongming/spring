@@ -19,7 +19,7 @@ public class scan {
 	public ModelAndView scan(){
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("message", "注解的测试");
-		mv.setViewName("/WEB-INF/content/welcome.jsp");
+		mv.setViewName("welcome");
 		return mv;
 		
 	}
